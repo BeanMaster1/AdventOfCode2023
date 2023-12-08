@@ -63,6 +63,10 @@ int main()
         }
         counts.push_back(move_count);
     }
+    //This is a scam, I got lucky on my guess that they wanted LCM because it felt like an LCM problem,
+    //but upon rereading the question there is no stated gurantee that LCM will work.
+    //To fix the problem, it should be defined as
+    //"If a ghost is already on a node ending with 'Z', it returns to the node that it started at originally"
     long long lcm = counts[0];
     for(int i = 1; i < counts.size(); i++)
     {
